@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="san3a.css">
-    <script src='san3a.css'></script>
+    <script src='san3a.js'></script>
     <title>San3a.tn</title>
 </head>
 
@@ -22,18 +22,19 @@
             <img src="images/thinking.jpg" class="card-img-top" alt="help me">
             <div class="card-body mx-auto">
                 <h5 class="card-title">المستفيد</h5>
-                <!--<a href="#" class="btn btn-primary">إبدأ البحث</a> -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     إبدأ البحث
                 </button>
+                <!--sing in sing up modal-->
+
 
 
             </div>
         </div>
 
         <div class="card text-white bg-dark mb-3" style="width: 18rem;">
-            <img src="images/fairy.png" class="card-img-top" alt="I ll do it for you">
+            <img src="images/men-work.png" class="card-img-top" alt="I ll do it for you">
 
             <div class="card-body mx-auto">
                 <h5 class="card-title">صاحب الصنعة</h5>
@@ -45,54 +46,63 @@
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="column" id="main">
-                                    <h1>Sign Up </h1>
-                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="exampleInputName">Name</label>
-                                            <input type="name" class="form-control" id="exampleInputName"
-                                                placeholder="Name">
+                      <form>
+                        <div class="login-wrap">
+                            <div class="login-html">
+                                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1"
+                                    class="tab">Sign In</label>
+                                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2"
+                                    class="tab">Sign Up</label>
+                                <div class="login-form">
+                                    <div class="sign-in-htm">
+                                        <div class="group">
+                                            <label for="user" class="label">Username</label>
+                                            <input id="user" type="text" class="input">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">E-mail </label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp" placeholder="E-mail">
+                                        <div class="group">
+                                            <label for="pass" class="label">Password</label>
+                                            <input id="pass" type="password" class="input" data-type="password">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                                placeholder="Password">
+                                        <div class="group">
+                                            <input id="check" type="checkbox" class="check" checked>
+                                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
                                         </div>
-                                        <button type="button" class="btn btn-primary" onclick="validateForm()">Sign Up</button>
-                                    </form>
-                                </div>
-                                <div>
-                                    <?xml version="1.0" encoding="UTF-8"?>
-                                    <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-                                        <title>Path</title>
-                                        <desc>Created with Sketch.</desc>
-                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <path
-                                                d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z"
-                                                id="Path" fill="#F9BC35"></path>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="column" id="secondary">
-                                    <div class="sec-content">
-                                        <h2>Welcome Back!</h2>
-                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-                                        <button type="button" class="btn btn-primary">Login</button>
+                                        <div class="group">
+                                            <input type="submit" class="button" value="Sign In">
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="foot-lnk">
+                                            <a href="#forgot">Forgot Password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="sign-up-htm">
+                                        <div class="group">
+                                            <label for="user" class="label">Username</label>
+                                            <input id="user" type="text" class="input">
+                                        </div>
+                                        <div class="group">
+                                            <label for="pass" class="label">Password</label>
+                                            <input id="pass" type="password" class="input" data-type="password">
+                                        </div>
+                                        <div class="group">
+                                            <label for="pass" class="label">Repeat Password</label>
+                                            <input id="pass" type="password" class="input" data-type="password">
+                                        </div>
+                                        <div class="group">
+                                            <label for="pass" class="label">Email Address</label>
+                                            <input id="pass" type="text" class="input">
+                                        </div>
+                                        <div class="group">
+                                            <input type="submit" class="button" value="Sign Up" onclick="validateForm()">
+                                        </div>
+                                        <div class="hr"></div>
+                                        <div class="foot-lnk">
+                                            <label for="tab-1">Already Member?</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
 
