@@ -28,6 +28,5 @@ function validateForm() {
   return false
   
 }
-  /*modal*/
-  
+
 
