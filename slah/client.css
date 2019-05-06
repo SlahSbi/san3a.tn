@@ -1,0 +1,34 @@
+.container{
+  background-color: #dcf5f3;  
+  padding-top:2%;
+}
+.navbar-brand {
+margin-right: 36rem;
+margin-left: 1.5rem;
+font-size: 2.25rem;
+
+}
+.btn-group-vertical
+{
+    padding-top: 5%;
+   
+
+}
+.btn-secondary {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #6c757d;
+}
+
+.dropdown-item
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: pink;
+  
+}
+.dropdown-menu.show {
+  display: flex;
+}
+
