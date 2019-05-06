@@ -17,15 +17,17 @@ function validateForm() {
   alert("Invalid Password")
   return false; }
 
-  if ((rep) !== p){alert("please enter the same password") }
+  if ((rep) !== p){
+    alert("please enter the same password")
+return false 
+}
 
   if(!regex.test(e)){
     alert("bad e-mail adress")
     return false
   }
 
-  alert('submission succeded')
-  return false
+  window.location='./san3aProfile.html';
   
 }
 
