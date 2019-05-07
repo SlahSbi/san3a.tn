@@ -23,6 +23,27 @@
   flex-direction: column;
   align-items: center;
 }
+.logo{
+  width:10%;
+}
+
+.entete span{
+   font-size: 3em;
+   margin: 0px 60px;
+}
+.entete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:20px 50px;
+  width: 90%;
+}
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+
 
 /*footer*/
 
@@ -44,7 +65,8 @@
   
   .footer img
   {
-     width:10%;
+    margin-top: 10%;
+     width:5%;
      height: 10%;
   }
   .footer span

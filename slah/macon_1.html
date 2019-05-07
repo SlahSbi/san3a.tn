@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="macon_1.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <script src="client.js"></script>
         <title>macon 1</title>
     </head>
-    <body>
+    <body onload="load()">
         <div class="container">
             <div  class="header">
                 <i class=" retour fas fa-reply"></i>
@@ -17,7 +18,7 @@
                 <img src="images/macon_1.jpg" alt="MAÇON 1"/>
             </div>
             <div class ="coord">
-                    <span class="coord_details">NOM :  Maçon 1</span>
+                    <span class="coord_details">NOM :  <p id="name">Maçon 1</p></span>
                     <span class="coord_details">Télephone :  +216 88 558 855</span>
                     <span class="coord_details">Local :  Rue  de la république sousse</span>
                     <span class="coord_details">Travaux Effectués  </span>
