@@ -34,12 +34,11 @@ function validateForm() {
     return false
   }
 
-  window.location='./#';
-  
+  window.location='new.html'
 }
 
 const retour = ()=>{
-  window.location='./san3aHome.html';
+  window.location='./san3aHome.html'
 }
 
 /*bad input coloration*/
@@ -49,4 +48,20 @@ function surligne(champ, erreur)
       champ.style.backgroundColor = "#fba";
    else
       champ.style.backgroundColor = "";
+}
+
+/*se connecter*/
+
+const conct = ()=>{
+  let arr =["macon1", "macon2"," macon3", "plombier1", "plombier2", "plombier3", "menuisier1", "menuisier2", "menuisier3"]
+  let ps = document.querySelector("#user").value
+ if (arr.includes(ps)){window.location =`slah/${ps}.html`} 
+ else alert("Ce pseudo n'existe pas")
+}
+
+const imgadd =()=>{
+  let input = document.getElementById("photo");
+  let img = document.getElementById("profile");
+  console.log(img)
+  img.src = input.file.getAsDataURL();
 }
