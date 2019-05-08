@@ -43,6 +43,11 @@
   justify-content: center;
 }
 
+.logo-profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /*footer*/
 
