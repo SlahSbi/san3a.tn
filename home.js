@@ -9,8 +9,8 @@ function validateForm() {
   let ad = document.forms["validationk"]["address"].value;
   let regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
   let strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})")
-  let adRegex = new RegExp("^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.{8,})")
-  let teRegex = new RegExp("^(?=.*[0-9])(?=.{8,})")
+  let adRegex = new RegExp("^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])")
+  let tek= /^\(?([0-9]{2})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/;
   if (fn == "")  {
     alert("SVP entrer votre nom")
     return false
@@ -18,6 +18,11 @@ function validateForm() {
   
   if(!adRegex.test(ad)){
     alert("Adresse non valid")
+    return false
+  }
+
+  if(!tek.test(te)){
+    alert("num telephone non valid")
     return false
   }
   if(!strongRegex.test(p)){
@@ -33,4 +38,15 @@ function validateForm() {
   
 }
 
+const retour = ()=>{
+  window.location='./san3aHome.html';
+}
 
+/*bad input coloration*/
+function surligne(champ, erreur)
+{
+   if(erreur)
+      champ.style.backgroundColor = "#fba";
+   else
+      champ.style.backgroundColor = "";
+}

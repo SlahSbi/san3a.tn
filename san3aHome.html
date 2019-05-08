@@ -9,6 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="home.css">
     <script src='home.js'></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>San3a.tn</title>
@@ -20,7 +21,7 @@
 
         <!--navbar-->
 
-        <div class="header ">
+        <div data-aos="zoom-in" class="header ">
             <nav class="navbar navbar-expand-lg navbar-light bg-light entete">
                 <img class="logo" src="images/logo.png">
                 <span> San3a.tn</span>
@@ -31,9 +32,9 @@
 
         <!--navigation cards-->
 
-        <div class="d-flex justify-content-around menu">
+        <div class="d-flex justify-content-around menu row">
 
-            <div class="card text-black mb-3" style="width: 18rem;">
+            <div class="card text-black mb-3"  data-aos="fade-up-left" style="width: 18rem;">
                 <img src="images/thinking.jpg" class="card-img-top" alt="help me">
                 <div class="card-body mx-auto">
                     <h5 class="card-title">Espace Employeur</h5>
@@ -46,7 +47,7 @@
             </div>
 
 
-            <div class="card text-black mb-3" style="width: 18rem;">
+            <div class="card text-black mb-3" data-aos="fade-up-right" style="width: 18rem;">
                 <img src="images/worker.png" class="card-img-top" alt="I ll do it for you">
                 <div class="card-body mx-auto">
                     <h5 class="card-title">Espace Employé</h5>
@@ -98,8 +99,9 @@
                                     <input id="check" type="checkbox" class="check" checked>
                                     <label for="check"><span class="icon"></span> Gardez-moi connecté</label>
                                 </div>
-                                <div class="group">
-                                    <input type="submit" class="button" value="Se connecter" onclick="validatelogin()">
+                                <div class="group row">
+                                    <input type="submit" class="button col-lg-6 col-sm-12" value="Se connecter" onclick="validatelogin()">
+                                    <input type="button" class="button  col-lg-6 col-sm-12" value="retour" onclick="retour()">
                                 </div>
                                 <div class="hr"></div>
                                 <div class="foot-lnk">
@@ -128,8 +130,9 @@
                                     <label for="mail" class="label"> Adresse mail</label>
                                     <input id="mail" name="E-mail" type="text" class="input">
                                 </div>
-                                <div class="group">
-                                    <input type="button" class="button" value="s'inscrire" onclick="validateForm()">
+                                <div class="group row">
+                                    <input type="button" class="button col-lg-6" value="s'inscrire" onclick="validateForm()">
+                                    <input type="button" class="button  col-lg-6" value="retour" onclick="retour()">
                                 </div>
                                 <div class="hr"></div>
                                 <div class="foot-lnk">
@@ -151,6 +154,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>
