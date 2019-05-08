@@ -4,32 +4,41 @@
   
   }
   .retour{
-    background-color: #f8f9fa;
-    padding: 4%;
-    margin: 2%;
-    border-radius: 8px; 
+    border-radius: 8px!important;
+    width: 31%;
+    margin-left: 8%;
+   
 }
 
 .mot_coord{
     background-color: #f8f9fa;
     padding: 4%;
-    margin: 2%;
+    margin-right: 15%;
     font-size: 250%;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;  
-    border-radius: 8px; 
+    font-weight: bold;
+    border-radius:15px 50px;
+    text-align: center;
 }
 .header
 {
    display: flex;
    justify-content: space-around ;
-   border-radius: 8px; 
+   align-items: center;
    
 }
 .header img
 {
-   border-radius: 8px;  
+  border-radius: 15px 50px;
+    margin-right: 2%;
 }
+.devis{
+    display: flex;  
+   
+   
+   
+}
+
 .coord{
     display: flex;
     justify-content: space-around ;
@@ -44,8 +53,8 @@
     font-size: 165%;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    width: 40%;
-    border-radius: 8px; 
+    width: 45%;
+    border-radius: 15px 40px;
 }
 .travaux
 {
@@ -54,7 +63,7 @@
    background-color: #f8f9fa;
    padding: 2%;
    margin: 2%;
-   border-radius: 8px; 
+   border-radius:15px 50px;
    
 }
 .footer{
@@ -69,19 +78,18 @@
    }
  .logo_footer img
 {margin-left:2%;
-border-radius: 8Px;
+border-radius:6px;
+width: 4%;
+height: 4%;
  
    }
 
-.footer img
-{
-    width:10%;
-    height: 10%; 
- }
+
  .footer span
 {
     margin: 2%;
     font-size: 120%; 
+
    }
 
 

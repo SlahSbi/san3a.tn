@@ -11,8 +11,6 @@ font-size: 2.25rem;
 .btn-group-vertical
 {
     padding-top: 5%;
-   
-
 }
 .btn-secondary {
   color: #000;
@@ -31,4 +29,35 @@ font-size: 2.25rem;
 .dropdown-menu.show {
   display: flex;
 }
+/*menu*/
+.menu
+{
+flex:display;
+}
+
+
+/*footer*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+ }
+ .logo_footer
+ {display: flex;
+   justify-content: center 
+    }
+  .logo_footer img
+ {margin-left:2%;
+ border-radius:6px;
+ width: 4%;
+ height: 4%;
+  
+    }
+  .footer span
+ {
+  margin: 2%;
+  font-size: 120%; 
+    }
+ 
 
